@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.menu {
+    background-color: rgb(255, 110, 57);
+}
+
+.heading {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.navbar-light .navbar-brand {
+    color: whitesmoke;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/cart.css">
+
+    <!-- bootstrap-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap-link -->
+
+    <!-- owl-curosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- nav-bar-start -->
+
+    <nav class="navbar navbar-expand-md bg-dark  fixed-top navbar-light">
+        <div class="container-fluid">
+            <div class="nav-logo">
+                <div class="logo">
+                    <img src="/css/redisgn_seldom-removebg-preview.png" alt="logo" style="height: 50px; width: 100%;">
+                </div>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="myMenu">
+                <!-- nav-address -->
+                <div class="nav-address" data-bs-toggle="modal" data-bs-target="#address-popup">
+                    <p class="address-first">Deliver to Vijayawada 520010</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="address-sec">Update Location</p>
+                    </div>
+                </div>
+
+                <!-- nav-search -->
+
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>All</option>
+                    </select>
+                    <input type="text" placeholder=" Search Amazon.in" class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <!-- nav-lan -->
+
+                <div class="nav-lan">
+                    <div class="lan-icon">
+                        <img src="/pngtree-the-national-flag.jpg" alt="flag" height="20px" width="30px">
+                    </div>
+                    <select class="lan-select">
+                        <option>EN</option>
+                        <option>Tel</option>
+                    </select>
+                </div>
+
+                <!-- nav-sign -->
+
+                <div class="nav-Sign-in" data-bs-target="#hello-sign">
+                    <p class="sign-first">Hello, sign in</p>
+                    <div class="add-icon">
+                        <p class="sign-sec">Accounts & Lists</p>
+                    </div>
+                </div>
+
+                <!-- nav-return -->
+
+                <div class="return-OR">
+                    <p class="OR-first">Returns</p>
+                    <p class="OR-sec"> & Orders</p>
+                </div>
+
+                <!-- nav-cart-icon -->
+
+                <div class="nav-cart">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping cart-main-icon"></i>
+                        <p class="cart-sec">Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="panel">
+                <div class="panel-all">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </div>
+                <div class="panel-ops">
+                    <p>Fresh</p>
+                    <p>Mx Player</p>
+                    <p>sell</p>
+                    <p>Best Sellers</p>
+                    <p>Today Deals</p>
+                    <p>Mobiles</p>
+                    <p>Customer Services</p>
+                    <p>Electronics</p>
+                    <p>Fashion</p>
+                    <p>Amazon Pay</p>
+                    <p>New Releases</p>
+                    <p>Computers</p>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- nav-bar-end -->
+
+
+    <section class="slider-changeImg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 showcase-img">
+                    <div class="row">
+                        <div class=" col-md-2 img-item four-one-imgs">
+                            <img src="/css/mobile-frame-1.jpg" alt="photo"
+                                onclick="changeImage('/css/mobile-frame-1.jpg')">
+                            <img src="/css/redmi note1.jpg" alt="photo" onclick="changeImage('/css/redmi note1.jpg')">
+                            <img src="/css/redmi note2.jpg" alt="photo" onclick="changeImage('/css/redmi note2.jpg')">
+                            <img src="/css/redmi main.jpg" alt="photo" onclick="changeImage('/css/redmi main.jpg')">
+                            <video src="/css/narzo demo.mp4" autoplay
+                                onclick="changeVideo('/css/narzo demo.mp4')"></video>
+                        </div>
+                        <div class=" col-md-5 main-frame">
+                            <img id="mainImage" class="main-image active" src="/css/redmi main.jpg"
+                                alt="Main Product Image" style="height: 500px; width:60%;">
+                            <video id="mainVideo" class="d-none" src="/css/narzo demo.mp4" autoplay muted loop
+                                style="height: 500px; width:80%;"></video>
+                        </div>
+                        <div class=" col-md-5 details">
+                            <div>
+                                <h4>Redmi Note 14 5G (Phantom Purple, 6GB RAM 128GB Storage) | Global Debut MTK
+                                    Dimensity
+                                    7025 Ultra | 2100 nits Segment Brightest 120Hz AMOLED | 50MP Sony LYT 600 OIS+EIS
+                                    Triple
+                                    Camera</h4>
+
+                                <p class="card-title">iPhone 16 128GB</p>
+                                <p class="card-text">5G Mobile Phone with Camera Control...</p>
+                                <h2>$2570.45</h2>
+                            </div>
+                            <div>
+                                <p class="v">V<span class="prime">Prime</span></p>
+                                <h5>FREE delivery <strong>Sun, 5 Jan</strong> </h5>
+                                <h5>Or fastest delivery <strong>Sat, 4 Jan</strong></h5>
+                                <h4>Service: Installation</h4>
+                            </div>
+                            <div>
+                                <p class="text-danger" id="price">$999.99</p>
+                                <input type="hidden" name="price" class="price" value="999.99">
+                                <p class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734; 100 Reviews</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Buy Now</button>
+                                <button class="btn btn-danger cartBtn">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <!-- Main Product Listing Column -->
+                <div class="col-md-10">
+
+                    <div class="row">
+                        <!-- Product Card Example -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+                                    <div>
+                                        <img src="/css/Realme Narzo.jpg" class="object-fit-contain" alt="iPhone 16">
+                                    </div>
+                                    <h6 class="card-title">iPhone 16 128GB</h6>
+                                    <p class="card-text">5G Mobile Phone with Camera Control...</p>
+                                    <div>
+                                        <p class="text-danger" class="price">$999.99</p>
+                                        <input type="hidden" name="price" class="price" value="999.99">
+                                        <p class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734; 100 Reviews</p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary">Buy Now</button>
+                                        <button class="btn btn-danger cartBtn">Add To Cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+                                    <div>
+                                        <img src="/css/Realme Narzo.jpg" class="object-fit-contain" alt="iPhone 16">
+                                    </div>
+                                    <h6 class="card-title">iPhone 16 128GB</h6>
+                                    <p class="card-text">5G Mobile Phone with Camera Control...</p>
+                                    <div>
+                                        <p class="text-danger" class="price">$999.99</p>
+                                        <input type="hidden" name="price" class="price" value="999.99">
+                                        <p class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734; 100 Reviews</p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary">Buy Now</button>
+                                        <button class="btn btn-danger cartBtn">Add To Cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+                                    <div>
+                                        <img src="/css/galaxy.jpg" class="object-fit-contain" alt="iPhone 16">
+                                    </div>
+                                    <h6 class="card-title">iPhone 16 128GB</h6>
+                                    <p class="card-text">5G Mobile Phone with Camera Control...</p>
+                                    <div>
+                                        <p class="text-danger" class="price">$999.99</p>
+                                        <input type="hidden" name="price" class="price" value="999.99">
+                                        <p class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734; 100 Reviews</p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary">Buy Now</button>
+                                        <button class="btn btn-danger cartBtn">Add To Cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+                                    <div>
+                                        <img src="/css/Galaxy-mobile.jpg" class="object-fit-contain" alt="iPhone 16">
+                                    </div>
+                                    <h6 class="card-title">iPhone 16 128GB</h6>
+                                    <p class="card-text">5G Mobile Phone with Camera Control...</p>
+                                    <div>
+                                        <p class="text-danger" class="price">$999.99</p>
+                                        <input type="hidden" name="price" class="price" value="999.99">
+                                        <p class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734; 100 Reviews</p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary">Buy Now</button>
+                                        <button class="btn btn-danger cartBtn">Add To Cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+                                    <div>
+                                        <img src="/css/Realme Narzo.jpg" class="object-fit-contain img" alt="iPhone 16">
+                                    </div>
+                                    <h6 class="card-title">iPhone 16 128GB</h6>
+                                    <p class="card-text">5G Mobile Phone with Camera Control...</p>
+                                    <div>
+                                        <p class="text-danger" class="price">$999.99</p>
+                                        <input type="hidden" name="price" class="price" value="999.99">
+                                        <p class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734; 100 Reviews</p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary mx-3">Buy Now</button>
+                                        <button class="btn btn-danger cartBtn">Add To Cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+                                    <div>
+                                        <img src="/css/Realme Narzo.jpg" class="object-fit-contain img" alt="iPhone 16">
+                                    </div>
+                                    <h6 class="card-title">iPhone 16 128GB</h6>
+                                    <p class="card-text">5G Mobile Phone with Camera Control...</p>
+                                    <div>
+                                        <p class="text-danger" class="price">$999.99</p>
+                                        <input type="hidden" name="price" class="price" value="999.99">
+                                        <p class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734; 100 Reviews</p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary mx-3">Buy Now</button>
+                                        <button class="btn btn-danger cartBtn">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart-deatils">
+                        <p id="cartPrice">0.00</p>
+                        <div class="cart-container">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid today_mobile-deals">
+        <div class="mobile-deals mb-3 ">
+            <h1>Related to items you've viewed</h1>
+            <p class="deals"><a href="#">See More</a></p>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="/css/Realme.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+            <div class="item">
+                <img src="/css/Narzo.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+            <div class="item">
+                <img src="/css/Realme Narzo.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+            <div class="item">
+                <img src="/css/galaxy.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+            <div class="item">
+                <img src="/css/Galaxy-mobile.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid today_mobile-deals">
+        <div class="mobile-deals mb-3 ">
+            <h1>Related to items you've viewed</h1>
+            <p class="deals"><a href="#">See More</a></p>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="/css/Realme.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+            <div class="item">
+                <img src="/css/Narzo.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+            <div class="item">
+                <img src="/css/Realme Narzo.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+            <div class="item">
+                <img src="/css/galaxy.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+            <div class="item">
+                <img src="/css/Galaxy-mobile.jpg" alt="toy" style="height: 230px; width: 70%;">
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container-fluid">
+            <img src="/css/camera img.jpg" alt="photo" style="height: 50%; width: 100%;">
+            <img src="/css/camera img2.jpg" alt="photo" style="height: 50%; width: 100%;">
+            <img src="/css/camera img3.jpg" alt="photo" style="height: 50%; width: 100%;">
+            <img src="/css/camera img4.jpg" alt="photo" style="height: 50%; width: 100%;">
+        </div>
+    </section>
+
+    
+    <script>
+        let cart_Amt = document.getElementById('cartPrice');
+        let cart_btn = document.querySelectorAll('.cartBtn');
+        let cartContainer = document.querySelector('.cart-container');
+
+        cart_btn.forEach((button) => {
+            button.addEventListener('click', function () {
+                let price = parseFloat(this.parentElement.parentElement.querySelector('.price').value);
+                let current_price = parseFloat(cart_Amt.innerHTML);
+                cart_Amt.innerHTML = (current_price + price).toFixed(2);
+
+                let image = this.parentElement.parentElement.querySelector('img').outerHTML;
+                let cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `${image} <button class="btn btn-danger remove-item-btn">Remove</button>`;
+                cartContainer.appendChild(cartItem);
+
+                cartItem.querySelector('.remove-item-btn').addEventListener('click', function () {
+                    let itemPrice = price;
+                    let updated_price = parseFloat(cart_Amt.innerHTML) - itemPrice;
+
+                    cart_Amt.innerHTML = updated_price >= 0 ? updated_price.toFixed(2) : "0.00";
+
+                    cartItem.remove();
+                });
+            });
+        });
+
+    </script>
+
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById("mainImage").src = imageSrc;
+            document.getElementById("mainVideo").style.display = "none";
+            document.getElementById("mainImage").style.display = "block";
+
+
+        }
+        function changeVideo(VideoSrc) {
+            document.getElementById("mainVideo").src = VideoSrc;
+            document.getElementById("mainVideo").classList.remove("d-none");
+
+            document.getElementById("mainVideo").style.display = "block";
+            document.getElementById("mainImage").style.display = "none";
+
+        }
+
+    </script>
+
+    <!-- owl-cursol -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            stagePadding: 50,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

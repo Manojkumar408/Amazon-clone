@@ -1,0 +1,793 @@
+* {
+    margin: 0;
+    font-family: Arial sans-serif;
+    border: border-box;
+}
+
+body {
+    background-color: #F4F0ED;
+}
+
+.navbar {
+    height: 70px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.nav-logo {
+    height: 50px;
+    width: 170px;
+}
+
+.logo {
+    /* background-image: url("https://res.cloudinary.com/devvssw8y/image/upload/v1735301257/Amazon-Logo-White1_saslut.png"); */
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.border {
+    border: 2px solid Transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white
+}
+
+/* box2 */
+
+.address-first {
+    color: #cccccc;
+    font-size: 1rem;
+    margin-left: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.address-sec {
+    color: #ffff;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.add-icon i {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 20px;
+
+}
+
+.nav-address {
+    padding: 8px;
+    width: 15%;
+}
+
+/* box3 */
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-search:focus {
+    outline: none;
+}
+
+.search-select {
+    background-color: #a8a8a8;
+    width: 65px;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-select:focus {
+    outline: none;
+
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.search-input:focus {
+    outline: none;
+
+}
+
+.search-icon {
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    cursor: pointer;
+}
+
+/* box-4 */
+
+.nav-lan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: 15px;
+}
+
+.lan-icon {
+    margin-left: 10px;
+}
+
+.lan-select {
+    margin-left: 5px;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.lan-select:focus {
+    outline: none;
+
+}
+
+/* box-5 */
+
+.sign-first {
+    font-size: 1rem;
+    margin-left: 17px;
+}
+
+.sign-sec {
+    font-size: 1.rem;
+    font-weight: 900;
+    font-weight: bold;
+}
+
+.nav-Sign-in {
+    margin-left: 10px;
+    padding: 10px;
+    width: 8%;
+    cursor: pointer;
+}
+
+/* box-6 */
+
+.OR-first {
+    font-size: 1rem;
+}
+
+.OR-sec {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.return-OR {
+    margin-left: 10px;
+    width: 7%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+/* box-7 */
+.cart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-main-icon {
+    font-size: 2rem;
+}
+
+.cart-sec {
+    font-size: 1.2rem;
+}
+
+.nav-cart {
+    margin-left: 5px;
+    width: 5%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* panel-styles */
+
+
+.panel {
+    height: 50px;
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 69px !important;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+.panel-all {
+    width: 6%;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.panel-ops p {
+    display: inline;
+    font-size: 20px;
+    padding-left: 15px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.panel-ops p:hover {
+    color: orange;
+}
+
+.panel-ops {
+    width: 94%;
+    font-size: 1.2rem;
+}
+
+.panel-deals {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* hero-section */
+
+.hero-section {
+    background-image: url(https://res.cloudinary.com/devvssw8y/image/upload/v1735325746/mobile_background_qnw9zk.jpg);
+    height: 420px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 100px;
+
+}
+
+.hero-message {
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 50px;
+
+
+}
+
+/* box-section-1 */
+.box {
+    height: 430px;
+    width: 23%;
+    background-color: #f1efec;
+}
+
+.box-section-1 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F4F0ED;
+    cursor: pointer;
+
+}
+
+.two-headings {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.box1 {
+    background-color: white;
+    text-align: center;
+}
+
+.box2 {
+    background-color: white;
+    text-align: center;
+}
+
+.box3 {
+    background-color: white;
+    text-align: center;
+}
+
+.box4 {
+    background-color: white;
+    text-align: center;
+}
+
+.mobile-header-1 {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.mobile-header-2 {
+    color: rgb(16, 12, 236);
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    margin-top: 15px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+.chairs-header-1 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.chairs-header-2 {
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.girls-header-1 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.girls-header-2 {
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.hoddy-header-1 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.hoddy-header-2 {
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+/* box-section-2 */
+
+.box-section-2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F4F0ED;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* box-section-3 */
+.box-section-3 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F4F0ED;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.box-section-4 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F4F0ED;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.box-section-5 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F4F0ED;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.sign-section {
+    width: 100%;
+    height: 162px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 100px;
+    color: rgb(0, 0, 0);
+}
+
+.sign-matter-1 {
+    font-size: 2.5rem;
+}
+
+.sign-matter-2 {
+    font-size: 2rem;
+}
+
+.sign-matter-1 {
+    font-size: 2.5rem;
+}
+
+.start-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mano {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* footer */
+.main-footer {
+    height: 300px;
+    display: flex;
+    background-color: #232F3E;
+    color: #aeb3b3;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+.mini-footer1 {
+    margin-top: 15px;
+}
+
+.mini-footer3 {
+    margin-top: 80px;
+}
+
+.mini-footer4 {
+    margin-bottom: 47px;
+}
+
+.main-footer-menu {
+    font-size: 25px;
+    font-weight: 700px;
+    color: white;
+}
+
+.social {
+    font-size: 2.2rem;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+.footer-icon img {
+    height: 50px;
+    width: 250px;
+}
+
+.footer-icon {
+    background-color: #0f1111;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* slider */
+.today_deals_product_item {
+    min-width: 100px;
+    width: 270px;
+    padding: 20px 10px;
+}
+
+.today_deals_product_list {
+    display: flex;
+}
+
+.today_deals_container {
+    margin: 30px;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1),
+        2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    height: 350px;
+
+}
+
+.today_deals_heading {
+    display: flex;
+    align-items: center;
+    padding: 2px 28px;
+    font-size: 20px;
+}
+
+.today_deals_product_container {
+    height: 270px;
+    position: relative;
+}
+
+.discount_Container {
+    /* border: 2px solid red; */
+}
+
+.discount_Container a:first-child {
+    background-color: rgb(156, 24, 46);
+    padding: 5px 10px;
+    color: white;
+    font-weight: 550;
+    text-decoration: none;
+    border-radius: 3px;
+
+}
+
+.discount_Container a {
+    padding: 5px 10px;
+    font-size: 17px;
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+
+}
+
+.deals a {
+    color: rgb(238, 115, 43);
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 18px;
+
+}
+
+.today_deals_product_item p {
+    font-size: 17px;
+}
+
+.today_deals_btn_container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.today_deal_btn {
+    padding: 30px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(247, 245, 245);
+}
+
+.today_deal_btn2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(247, 245, 245);
+
+}
+
+.today_deal_btn i {
+    font-size: 25px;
+}
+
+.today_deal_btn2 i {
+    font-size: 25px;
+}
+
+.today_deals_product_item img {
+    z-index: 0;
+}
+
+.kurthi {
+    text-align: start;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.four-one-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.four-one-imgs img {
+    border: 3px solid gray;
+    border-radius: 5px;
+
+}
+
+/* box1-images */
+
+.box1-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* model css */
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 200px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  
+
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border-radius: 20px;
+    /* padding: 20px; */
+    border: 1px solid #888;
+    width: 30%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #000;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* .modal-content{
+    background-color: #F0F2F2;
+  } */
+.modal-location {
+    background-color: #F0F2F2;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-content h3 {
+    font-size: 1.6rem;
+
+}
+
+.modal-sign p {
+    margin-top: 10px;
+    padding: 13px;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.modal-sign-btn {
+    margin-left: 90px;
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #FFD814;
+}
+
+.modal-address {
+    display: flex;
+    
+}
+
+.input-modal-box {
+    padding: 20px;
+}
+
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 200px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+
+}
